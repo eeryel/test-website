@@ -1,0 +1,34 @@
+/* set default background colour */
+html {
+  background-color: lightblue;
+}
+
+/* displays image and sets max width to 100% */
+img {
+  max-width: 100%;
+  display: none;
+}
+
+/* tablet display */
+@media (min-width: 768px) {
+  html {
+    background-color: gray;
+  }
+
+  img {
+    display: block;
+    margin: 20vh auto;
+  }
+}
+
+/* desktop display */
+@media (min-width: 1920px) {
+  html {
+    background-color: rgb(170, 0, 0);
+  }
+
+  img {
+    display: none;
+    margin: 20vh auto;
+  }
+}

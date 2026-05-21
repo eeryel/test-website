@@ -1,0 +1,108 @@
+/* global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  padding-top: 20px;
+}
+
+/* layout */
+header {
+  background-color: antiquewhite;
+  height: 100vh; /* sets the header to fill the height of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(25px, 3vw, 30px); /* sets header font size */
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px; /* adds extra spacing between letters*/
+  font-weight: 100; /* reduces the font weight */
+  font-size: clamp(20px, 3vw, 25px); /* sets h3 font size */
+}
+
+section {
+  padding: 30px;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: rgb(114, 59, 22);
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.white h2 {
+  color: brown;
+  font-size: clamp(35px, 2.5vw, 40px); /* sets h3 font size */
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.black h2 {
+  color: antiquewhite;
+  font-size: clamp(35px, 2.5vw, 40px); /* sets h3 font size */
+}
+
+.brown {
+  background-color: rgb(114, 59, 22);
+  color: white;
+}
+
+.brown h2 {
+  color: antiquewhite;
+  font-size: clamp(35px, 2.5vw, 40px); /* sets h3 font size */
+}
+
+.col {
+  line-height: 40px;
+}
+
+.row {
+  /* parent flexbox of the .col children */
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+footer {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  header {
+    height: 30vh;
+  }
+  .row {
+    flex-direction: row;
+    align-items: center; /* aligns text with images */
+  }
+  .col {
+    flex: 1; /* gives bot .col shildren equal width */
+  }
+}

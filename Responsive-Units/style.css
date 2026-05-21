@@ -1,0 +1,34 @@
+html {
+  font-size: 10px;
+}
+
+.parent {
+  background-color: blue;
+  width: 80%;
+  height: 100vh;
+  font-size: clamp(16px, 1.5vw, 20px);
+}
+
+.child1 {
+  background-color: aqua;
+  width: 50%;
+  height: 50%;
+  font-size: 1em;
+}
+
+.child2 {
+  background-color: cornflowerblue;
+  width: 50vw;
+  height: 50vh;
+  font-size: 2rem;
+}
+
+.grandchild1 {
+  background-color: chartreuse;
+  font-size: 2em;
+}
+
+.grandchild2 {
+  background-color: darkolivegreen;
+  font-size: 2rem;
+}

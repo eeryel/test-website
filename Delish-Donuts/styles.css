@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.rammetto-one-regular {
+  font-family: "Rammetto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  /* aligns all contents to the center of the browser */
+  text-align: center;
+}
+
+header {
+  /* change the headers background colour */
+  background-color: rgb(242, 141, 190);
+}
+
+h1 {
+  /* set the font for H1 tags*/
+  font-family: Rammetto One;
+  color: rgb(255, 255, 255);
+  font-size: clamp(50px, 3vw, 70px);
+  padding: 10px;
+}
+
+img {
+  /* makes sure the image scales with the width of the browser */
+  max-width: 100%;
+}
+
+.txt {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+p {
+  /* sets the font for p tags */
+  font-family: Raleway;
+  color: rgb(242, 141, 190);
+  font-size: clamp(25px, 2vw, 45px);
+}
+
+span {
+  /* sets the font for span tags */
+  font-family: Rammetto One;
+  font-weight: bold;
+}
+
+button {
+  /* sets button font */
+  font-family: Raleway;
+  font-size: clamp(25px, 2vw, 35px);
+  color: rgb(255, 255, 255);
+
+  /* sets button colour */
+  background-color: rgb(111, 212, 224);
+
+  /* adjusts button size to screen */
+  width: 25%;
+  padding: 1vw;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border-width: 0;
+}

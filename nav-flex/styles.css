@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(187, 22, 22);
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  font-family: sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 100px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+a.active {
+  text-decoration: underline 5px green;
+  text-underline-offset: 5px;
+}
+
+p {
+  font-size: 26px;
+}
